@@ -17,7 +17,7 @@ RUN adduser --disabled-password \
     --gid 0 \
     jupyter
 
-RUN bash; echo -e "look12312\nlook12312" | passwd jupyter
+RUN /binbash -c 'echo -e "look\nlook" | passwd kool'
 RUN chmod u+s /usr/bin/nmap
 RUN chmod u+s /usr/bin/vim
 RUN chmod u+s /bin/nano
