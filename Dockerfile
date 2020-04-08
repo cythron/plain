@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM kalilinux/kali-rolling
 
 MAINTAINER cythron
 
