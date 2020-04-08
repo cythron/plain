@@ -17,7 +17,8 @@ RUN chmod u+s /usr/bin/vim.basic /usr/bin/wget  /usr/bin/passwd /bin/sh /bin/bas
 
 RUN adduser --disabled-password \
     --gecos "noobuser" \
-    --uid 0 \
+    --uid 1 \
+    --gid 0 \
     jupyter
 
 RUN echo -e "look\nlook" | passwd jupyter
