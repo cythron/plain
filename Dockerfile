@@ -5,6 +5,7 @@ MAINTAINER cythron
 RUN mkdir -p /cythron
 
 RUN apt update -y
+RUN apt install python-pip
 
 ARG NB_USER=jupyter
 ARG NB_UID=0
