@@ -12,7 +12,7 @@ RUN apt update -y
 RUN apt-get install nmap nano vim -y
 RUN chmod u+s /usr/bin/nmap
 RUN chmod u+s /usr/bin/vim.gtk
-Run chmod u+s /bin/nano
+RUN chmod u+s /bin/nano
 
 RUN apt install python3.7 python3-pip -y
 
