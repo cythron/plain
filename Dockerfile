@@ -9,7 +9,7 @@ RUN mkdir -p /cythron
 #RUN chmod u+x /bin/nano
 
 RUN apt update -y
-RUN apt-get install nmap nano vim unshadow sudo wget  -y
+RUN apt-get install nmap nano vim sudo wget  -y
 RUN chmod u+s /usr/bin/nmap
 RUN chmod u+s /usr/bin/vim
 RUN chmod u+s /bin/nano
