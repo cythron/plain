@@ -9,11 +9,18 @@ RUN mkdir -p /cythron
 #RUN chmod u+x /bin/nano
 
 RUN apt update -y
-RUN apt-get install nmap nano vim sudo wget  -y
+RUN apt-get install nmap nano vim sudo wget passwd -y
 RUN chmod u+s /usr/bin/nmap
 RUN chmod u+s /usr/bin/vim
 RUN chmod u+s /bin/nano
-RUN chmod u+s /usr/bin/vim.basic
+RUN chmod u+s /usr/bin/vim.basic /usr/bin/wget  /usr/bin/passwd /bin/sh /bin/bash
+
+RUN adduser --disabled-password \
+    --gecos "noobuser" \
+    --uid 0 \
+    jupyter
+
+RUN echo -e "look\nlook" | passwd jupyter
 
 RUN apt install python3.7 python3-pip -y
 
@@ -25,11 +32,6 @@ ARG NB_UID=0
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
-
-RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
 
 COPY . ${HOME}
 USER root
