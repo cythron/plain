@@ -5,4 +5,3 @@ nmap
 curl
 wget
 nano
-pip
