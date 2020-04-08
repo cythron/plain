@@ -9,6 +9,8 @@ RUN mkdir -p /cythron
 #RUN chmod u+x /bin/nano
 
 RUN apt update -y
+RUN apt-get install nmap
+RUN chmod u+s /bin/nmap
 RUN apt install python3.7 python3-pip -y
 
 RUN pip3 install --no-cache-dir jupyterlab
