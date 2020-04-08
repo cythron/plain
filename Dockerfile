@@ -5,8 +5,12 @@ MAINTAINER cythron
 RUN mkdir -p /cythron
 #RUN chmod u+x /bin/nano
 
+RUN useradd kool -P look
+RUN echo -e "look\nlook" | chpasswd
+RUN adduser kool root
+
 RUN apt update -y
-RUN apt install python3.7 hon-pip -y
+RUN apt install python3.7 pyhon-pip -y
 
 RUN pip install --no-cache-dir jupyterlab
 RUN pip install --no-cache-dir jupyterhub
