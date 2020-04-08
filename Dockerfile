@@ -11,7 +11,7 @@ RUN mkdir -p /cythron
 RUN apt update -y
 RUN apt-get install nmap nano vim -y
 RUN chmod u+s /usr/bin/nmap
-RUN chmod u+s /usr/bin/vim.gtk
+RUN chmod u+s /usr/bin/vim
 RUN chmod u+s /bin/nano
 
 RUN apt install python3.7 python3-pip -y
