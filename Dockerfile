@@ -3,7 +3,7 @@ FROM kalilinux/kali-rolling
 MAINTAINER cythron
 
 RUN mkdir -p /cythron
-RUN chmod u+x /bin/nano
+#RUN chmod u+x /bin/nano
 
 RUN apt update -y
 RUN apt install python-pip -y
