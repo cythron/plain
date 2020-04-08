@@ -1,4 +1,4 @@
-FROM kalilinux/kali-rolling
+FROM ubuntu/18.04
 
 MAINTAINER cythron
 
@@ -6,10 +6,10 @@ RUN mkdir -p /cythron
 #RUN chmod u+x /bin/nano
 
 RUN apt update -y
-RUN apt install python3.7 python-pip -y
+RUN apt install python3.7 python3-pip -y
 
-RUN pip install --no-cache-dir jupyterlab
-RUN pip install --no-cache-dir jupyterhub
+RUN pip3 install --no-cache-dir jupyterlab
+RUN pip3 install --no-cache-dir jupyterhub
 
 ARG NB_USER=jupyter
 ARG NB_UID=0
