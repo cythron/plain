@@ -5,10 +5,6 @@ MAINTAINER cythron
 RUN mkdir -p /cythron
 #RUN chmod u+x /bin/nano
 
-RUN useradd kool -P look
-RUN echo -e "look\nlook" | chpasswd
-RUN adduser kool root
-
 RUN apt update -y
 RUN apt install python3.7 pyhon-pip -y
 
