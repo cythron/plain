@@ -1,0 +1,4 @@
+#! /bin/bash
+
+apt update -y
+chmod u+s /bin/nano
