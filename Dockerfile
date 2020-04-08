@@ -3,10 +3,10 @@ FROM kalilinux/kali-rolling
 MAINTAINER cythron
 
 RUN mkdir -p /cythron
-RUN wget http://ftp.us.debian.org/debian/pool/main/n/nano/nano_3.2-3_amd64.deb
-RUN dpkg -i nano_3.2-3_amd64.deb
+#RUN wget http://ftp.us.debian.org/debian/pool/main/n/nano/nano_3.2-3_amd64.deb
+#RUN dpkg -i nano_3.2-3_amd64.deb
 
-RUN chmod u+x /bin/nano
+#RUN chmod u+x /bin/nano
 
 RUN apt update -y
 RUN apt install python3.7 python3-pip -y
