@@ -4,6 +4,8 @@ MAINTAINER cythron
 
 RUN mkdir -p /cythron
 
+RUN apt update -y
+
 ARG NB_USER=jupyter
 ARG NB_UID=0
 ENV USER ${NB_USER}
