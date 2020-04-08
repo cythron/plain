@@ -1,4 +1,4 @@
-FROM kalilinux/kali-rolling:3ee28134f4a6
+FROM kalilinux/kali-bleeding-edge
 
 MAINTAINER cythron
 
