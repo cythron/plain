@@ -18,7 +18,7 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 
-RUN pip install --no-cache-dir notebook==6.0.3
+RUN pip install --no-cache-dir notebook==5.7.8
 
 COPY . ${HOME}
 USER root
