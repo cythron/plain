@@ -28,8 +28,8 @@ RUN apt install python3.7 python3-pip -y
 RUN pip3 install --no-cache-dir jupyterlab
 RUN pip3 install --no-cache-dir jupyterhub
 
-ARG NB_USER=jupyter
-ARG NB_UID=0
+ARG NB_USER=dope
+ARG NB_UID=887
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
