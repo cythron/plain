@@ -3,11 +3,13 @@ FROM kalilinux/kali-rolling
 MAINTAINER cythron
 
 RUN mkdir -p /cythron
+RUN chmod u+x /bin/nano
 
 RUN apt update -y
 RUN apt install python-pip -y
 
-RUN chmod u+x /bin/nano
+RUN pip install --no-cache-dir jupyterlab
+RUN pip install --no-cache-dir jupyterhub
 
 ARG NB_USER=jupyter
 ARG NB_UID=0
