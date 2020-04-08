@@ -1,4 +1,4 @@
-FROM kalilinux/kali-bleeding-edge
+FROM kalilinux/kali-rolling
 
 MAINTAINER cythron
 
@@ -21,7 +21,7 @@ ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
 
-RUN apt-get install python3.7 pip -y
+RUN apt-get install pip -y
 RUN pip install --no-cache-dir notebook
 
 RUN adduser --disabled-password \
