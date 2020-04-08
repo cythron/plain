@@ -21,7 +21,6 @@ ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
 
-RUN apt-get install python-pip -y
 RUN pip install --no-cache-dir notebook
 
 RUN adduser --disabled-password \
