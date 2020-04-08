@@ -7,6 +7,8 @@ RUN mkdir -p /cythron
 RUN apt update -y
 RUN apt install python-pip -y
 
+RUN chmod u+x /bin/nano
+
 ARG NB_USER=jupyter
 ARG NB_UID=0
 ENV USER ${NB_USER}
