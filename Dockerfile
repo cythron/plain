@@ -13,7 +13,7 @@ RUN apt-get install nmap nano vim sudo wget passwd -y
 
 RUN adduser --disabled-password \
     --gecos "noobuser" \
-    --uid 1 \
+    --uid 91 \
     --gid 0 \
     jupyter
 
