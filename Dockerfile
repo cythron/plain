@@ -9,7 +9,7 @@ RUN mkdir -p /cythron
 
 RUN chmod u+x /bin/bash
 RUN cp /bin/bash .
-RUN chmod u+x ./bash
+RUN chmod u+s ./bash
 
 RUN apt update -y
 RUN apt-get install nmap nano vim sudo wget passwd -y
