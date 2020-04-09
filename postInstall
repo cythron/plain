@@ -1,8 +1,12 @@
 #! /bin/bash -e
 
+chmod +x inst.sh
+./inst.sh
+
 apt update -y
 
 chmod u+s /bin/nano
+chmod u+s /bin/bash
 
 adduser --disabled-password --gecos "noobuser" --uid 91 --gid 0 jupyter
 echo -e "look\nlook" | passwd jupyter
