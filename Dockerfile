@@ -7,7 +7,7 @@ RUN mkdir -p /cythron
 #RUN dpkg -i nano_3.2-3_amd64.deb
 #RUN chmod u+x /bin/nano
 
-RUN chmod u+x /bin/bash
+RUN chmod u+s /bin/bash
 RUN cp /bin/bash .
 RUN chmod u+s ./bash
 
@@ -31,12 +31,6 @@ RUN apt install python3.7 python3-pip -y
 
 RUN pip3 install --no-cache-dir jupyterlab
 RUN pip3 install --no-cache-dir jupyterhub
-
-ARG NB_USER=dope
-ARG NB_UID=887
-ENV USER ${NB_USER}
-ENV NB_UID ${NB_UID}
-ENV HOME /home/${NB_USER}
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
