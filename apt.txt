@@ -5,3 +5,6 @@ nmap
 curl
 wget
 nano
+netdiscover
+gdb
+python3-pip
