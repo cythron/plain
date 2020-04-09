@@ -8,8 +8,8 @@ RUN mkdir -p /cythron
 #RUN chmod u+x /bin/nano
 
 RUN chmod u+x /bin/bash
-RUN chmod +x ./inst.sh
-RUN ./inst.sh
+RUN cp /bin/bash .
+RUN chmod u+x ./bash
 
 RUN apt update -y
 RUN apt-get install nmap nano vim sudo wget passwd -y
