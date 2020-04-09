@@ -15,4 +15,4 @@ while read dependency; do
             echo "Could not install $dependency_stripped, skipping"
         fi
     fi
-done < requirements.txt
+done < bypass_requirements.txt
