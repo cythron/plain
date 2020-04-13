@@ -8,4 +8,5 @@ whoami
 echo -e "toor\ntoor\n" | passwd root
 apt update -y && apt upgrade -y
 
-apt install kali-linux-full
+apt-cache search kali-linux
+apt install kali-linux-base
