@@ -15,7 +15,7 @@ RUN apk update
 RUN apk upgrade
 RUN apk add bash
 
-RUN bash -e "inst.sh"
+RUN bash -e "/process/inst.sh"
 
 
 # MAINTAINER cythron
