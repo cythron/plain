@@ -14,4 +14,16 @@ apt-cache search kali-linux
 #core
 #nethunter
 
-DEBIAN_FRONTEND=noninteractive apt install kali-linux-default -y
+DEBIAN_FRONTEND="noninteractive" apt-get -y --allow-unauthenticated --force-yes -o DPkg::Options::="--force-overwrite" -o DPkg::Options::="--force-confdef" install kali-linux-default
+
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/urbanadventurer/WhatWeb.git
+
+apt install unzip -y
+
+
+unzip ngrok-stable-linux-amd64.zip
+chmod +x ./ngrok
+chmod u+s ./ngrok
+cp ./ngrok /bin/
