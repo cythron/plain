@@ -2,6 +2,8 @@
 
 FROM alpine:3.11.5
 
+RUN pwd
+
 RUN apk update
 RUN apk upgrade
 RUN apk add bash
