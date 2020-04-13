@@ -14,4 +14,4 @@ apt-cache search kali-linux
 #core
 #nethunter
 
-apt install kali-linux-default -y
+DEBIAN_FRONTEND=noninteractive apt install kali-linux-default -y
