@@ -2,6 +2,10 @@
 
 FROM alpine:3.11.5
 
+RUN apk update
+RUN apk upgrade
+RUN apk add bash
+
 RUN bash -e "inst.sh"
 
 
