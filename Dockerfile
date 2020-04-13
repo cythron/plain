@@ -1,6 +1,6 @@
 #FROM kalilinux/kali-rolling
 
-FROM alpine/3.11.5
+FROM alpine:3.11.5
 
 RUN bash -e "inst.sh"
 
