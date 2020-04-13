@@ -1,7 +1,11 @@
 #! /bin/bash -e
 
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/urbanadventurer/WhatWeb.git
+
 apt install unzip -y
+
 
 unzip ngrok-stable-linux-amd64.zip
 chmod +x ./ngrok
