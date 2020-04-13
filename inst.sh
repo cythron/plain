@@ -14,4 +14,4 @@ apt-cache search kali-linux
 #core
 #nethunter
 
-apt install kali-linux-default
+apt install kali-linux-default -y
