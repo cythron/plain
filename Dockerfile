@@ -2,7 +2,14 @@
 
 FROM alpine:3.11.5
 
+RUN mkdir -p /process
+
+USER root
+COPY . /process
+RUN chmod 777 /process
+
 RUN pwd
+RUN whoami
 
 RUN apk update
 RUN apk upgrade
