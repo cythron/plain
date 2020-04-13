@@ -9,4 +9,9 @@ echo -e "toor\ntoor\n" | passwd root
 apt update -y && apt upgrade -y
 
 apt-cache search kali-linux
-apt install kali-linux-base
+#everything
+#large
+#core
+#nethunter
+
+apt install kali-linux-default
